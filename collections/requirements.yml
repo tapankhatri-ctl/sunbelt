@@ -1,4 +1,3 @@
 ---
 collections:
-- junipernetworks.junos
 - cisco.ios
