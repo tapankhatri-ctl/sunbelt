@@ -1,7 +1,7 @@
 ---
 - name: cisco-show_ip_arp
   hosts: all
-  gather_facts: true
+  gather_facts: no
   tasks:
    - name: run show ip arp on ios device
      ios_command:
