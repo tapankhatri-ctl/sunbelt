@@ -1,8 +1,8 @@
 ---
 - hosts: all
   gather_facts: false
+  connection: local
   tasks:
     - name: ping command
       shell: ping -c 4 -w 2 {{ ansible_host }}
-      delegate_to: localhost
       ignore_errors: true
