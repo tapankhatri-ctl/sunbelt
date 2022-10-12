@@ -4,4 +4,4 @@
   tasks:
     - name: ping command
       ansible.netcommon.net_ping:
-        dest: {{ ansible_host }}
+        dest: "{{ ansible_host }}"
