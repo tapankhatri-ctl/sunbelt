@@ -3,5 +3,5 @@
   gather_facts: false
   tasks:
     - name: ping command
-      win_ping: {{ ansible_host }}
+      win_ping: "{{ ansible_host }}"
       ignore_errors: true
