@@ -3,5 +3,6 @@
   gather_facts: false
   tasks:
     - name: ping command
-      ansible.netcommon.net_ping:
-        dest: "{{ ansible_host }}"
+      shell: ping -c 4 -w 2 {{ ansible_host }}
+      delegate_to: localhost
+      ignore_errors: true
