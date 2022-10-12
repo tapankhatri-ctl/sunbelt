@@ -4,7 +4,7 @@
   tasks:
     - name: ping command
       delegate_to: localhost
-      shell: "ping -c4 {{ inventory_hostname[1] }} "
+      shell: "ping -c4 {{ inventory_hostname['ansible_host'] }} "
       register: out
       ignore_errors: yes
 
