@@ -1,7 +1,7 @@
 ---
-- hosts: localhost
+- hosts: all
   gather_facts: false
   tasks:
     - name: ping command
-      shell: ping -c 4 -w 2 {{ ansible_host }}
+      win_ping: {{ ansible_host }}
       ignore_errors: true
