@@ -1,0 +1,8 @@
+---
+- name: cisco-show_cdp_neighbors
+  hosts: all
+  gather_facts: no
+  tasks:
+   - name: run show cdp neighbors on ios device
+     ios_command:
+       commands: show cdp neighbors
