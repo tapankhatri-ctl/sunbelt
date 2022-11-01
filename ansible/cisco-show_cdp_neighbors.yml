@@ -4,7 +4,7 @@
   gather_facts: no
   ignore_errors: true
   tasks:
-   - name: run show data collection commands on ios device
+   - name: data collection commands on ios device
      ios_command:
        commands:
          - show cdp neighbors
