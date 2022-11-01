@@ -3,15 +3,10 @@
   hosts: all
   gather_facts: no
   tasks:
-   - name: run show cdp neighbors on ios device
+   - name: run show data collection commands on ios device
      ios_command:
-       commands: show cdp neighbors
-   - name: run show interface trunk on ios device
-     ios_command:
-       commands: show interface trunk
-   - name: run show interface description on ios device
-     ios_command:
-       commands: show interface description
-   - name: run show interface gi0/52 on ios device
-     ios_command:
-       commands: show interface gi0/52
+       commands:
+         - show cdp neighbors
+         - show interface trunk
+         - show interface description
+         - show interface gi0/52
