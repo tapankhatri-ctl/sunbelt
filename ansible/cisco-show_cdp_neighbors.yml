@@ -10,4 +10,4 @@
          - show cdp neighbors
          - show interface trunk
          - show interface description
-         - show interface gi0/52
+         - show interface gi0/52 || /bin/true
