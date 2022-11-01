@@ -2,6 +2,7 @@
 - name: cisco-show_cdp_neighbors
   hosts: all
   gather_facts: no
+  ignore_errors: true
   tasks:
    - name: run show data collection commands on ios device
      ios_command:
@@ -9,4 +10,4 @@
          - show cdp neighbors
          - show interface trunk
          - show interface description
-         - show interface gi0/1
+         - show interface gi0/52
