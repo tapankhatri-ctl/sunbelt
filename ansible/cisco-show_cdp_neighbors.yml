@@ -10,4 +10,11 @@
          - show cdp neighbors
          - show interface trunk
          - show interface description
-         - show inventory
+         - show interface gi0/1
+         - show interface gi0/2
+         - show interface gi0/24
+         - show interface gi0/26
+         - show interface gi1/0/24
+         - show interface gi1/0/26
+         - show interface gi1/0/48
+         - show interface gi1/0/52
