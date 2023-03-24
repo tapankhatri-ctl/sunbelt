@@ -10,18 +10,36 @@
          - show interface trunk
          - show interface description
          - show inventory
-   - name: show slot0 interface commands on ios device
+   - name: show interface gi0/1 command on ios device
      ios_command:
        commands:
          - show interface gi0/1
+   - name: show interface gi0/2 command on ios device
+     ios_command:
+       commands:         
          - show interface gi0/2
+   - name: show interface gi0/24 command on ios device
+     ios_command:
+       commands:         
          - show interface gi0/24
+   - name: show interface gi0/26 command on ios device
+     ios_command:
+       commands:         
          - show interface gi0/26
-   - name: show slot1 interface commands on ios device
+   - name: show interface gi1/0/24 command on ios device
      ios_command:
        commands:
          - show interface gi1/0/24
+   - name: show interface gi1/0/26 command on ios device
+     ios_command:
+       commands:         
          - show interface gi1/0/26
+   - name: show interface gi1/0/48 command on ios device
+     ios_command:
+       commands:         
          - show interface gi1/0/48
+   - name: show interface gi1/0/52 command on ios device
+     ios_command:
+       commands:         
          - show interface gi1/0/52
   ignore_errors: true
