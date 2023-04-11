@@ -9,7 +9,7 @@
          - show cdp neighbors
          - show interface trunk
          - show interface description
-         - show inventory
+         #- show inventory
    - name: show interface gi0/1 command on ios device
      ios_command:
        commands:
